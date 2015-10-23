@@ -1,0 +1,15 @@
+Source: galliumos-laptop
+Section: admin
+Priority: required
+Maintainer: Hugh Greenberg <hugh@galliumos.org>
+XSBC-Original-Maintainer: Hugh Greenberg <hugh@galliumos.org>
+Standards-Version: 3.9.1
+
+Package: galliumos-laptop
+Provides: laptop
+Architecture: all
+Essential: yes
+Priority: required
+Depends: ubuntu-standard, galliumos-desktop
+Description: Gallium OS laptop files
+ This package contains laptop files for GalliumOS

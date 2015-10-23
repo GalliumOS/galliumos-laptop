@@ -1,2 +1,2 @@
-# galliumos-laptop
-Everything for GalliumOS that belongs to all Chromebooks, but not Chromeboxes or Chromebases.
+# galliumos-base
+Base config files for GalliumOS

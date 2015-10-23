@@ -1,0 +1,3 @@
+#!/bin/bash
+
+ln -sf /lib/systemd/system/laptop-settings.service /etc/systemd/system/multi-user.target.wants/laptop-settings.service
