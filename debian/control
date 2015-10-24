@@ -1,6 +1,6 @@
 Source: galliumos-laptop
 Section: admin
-Priority: required
+Priority: optional
 Maintainer: Hugh Greenberg <hugh@galliumos.org>
 Build-Depends: debhelper (>= 8.0.0),
                dh-systemd
@@ -9,8 +9,7 @@ Standards-Version: 3.9.6
 Package: galliumos-laptop
 Provides: laptop
 Architecture: all
-Essential: yes
-Priority: required
+Priority: optional
 Depends: ${misc:Depends}, ubuntu-standard, galliumos-desktop, galliumos-haswell | galliumos-broadwell | galliumos-device-c710
 Description: Gallium OS laptop files
  This package contains laptop files for GalliumOS
