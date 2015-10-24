@@ -1,26 +1,12 @@
 #!/usr/bin/make -f
 
-package = galliumos-laptop
-build:
-	touch build
+# Uncomment this to turn on verbose mode.
+#export DH_VERBOSE=1
 
-clean:
-	rm -f build
-	rm -f `find . -name "*~"`
-	rm -rf debian/tmp 
+%:
+	dh $@ --with systemd
 
-binary-arch: build
-	rm -rf debian/tmp
-	install -d debian/tmp/DEBIAN
-	install -d debian/tmp/etc/skel
-	install -d debian/tmp/lib/systemd/system
-	install -d debian/tmp/usr/bin
-	cp -r etc/skel/ debian/tmp/etc/
-	install -p -m 644 lib/systemd/system/* debian/tmp/lib/systemd/system
-	install -p -m 755 usr/bin/* debian/tmp/usr/bin
-	dpkg-gencontrol -pgalliumos-laptop
-	dpkg-deb --build -Zgzip debian/tmp ..
-
-binary: binary-arch
-
-.PHONY: binary binary-arch clean
+override_dh_installinit:
+	dh_installinit --no-start
+override_dh_systemd_start:
+	dh_systemd_start --no-start
