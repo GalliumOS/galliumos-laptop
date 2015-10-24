@@ -5,8 +5,3 @@
 
 %:
 	dh $@ --with systemd
-
-override_dh_installinit:
-	dh_installinit --no-start
-override_dh_systemd_start:
-	dh_systemd_start --no-start
