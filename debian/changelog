@@ -1,3 +1,21 @@
+galliumos-laptop (1.0.5) vivid-galliumos; urgency=medium
+
+  * Modified touchpad calibration script for resume
+
+ -- Hugh Greenberg <hugh@galliumos.org>  Tue, 27 Oct 2015 22:16:16 -0600
+
+galliumos-laptop (1.0.4) vivid-galliumos; urgency=medium
+
+  * Added touchpad calibration script for resume
+
+ -- Hugh Greenberg <hugh@galliumos.org>  Tue, 27 Oct 2015 22:16:16 -0600
+
+galliumos-laptop (1.0.3) vivid-galliumos; urgency=medium
+
+  * Changed deps 
+
+ -- Hugh Greenberg <hugh@galliumos.org>  Tue, 27 Oct 2015 22:16:16 -0600
+
 galliumos-laptop (1.0.2) vivid-galliumos; urgency=medium
 
   * Made this package optional and non-essential
