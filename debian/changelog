@@ -1,3 +1,10 @@
+galliumos-laptop (1.0.6) vivid-galliumos; urgency=medium
+
+  * Modified .xbindkeysrc to support the HP Chromebook 14 (thanks matthias0608)
+  * Modified .xbindkeysrc to move around some of the keys and to add a window list to one of the combinations
+
+ -- Hugh Greenberg <hugh@galliumos.org>  Mon, 2 Nov 2015 22:16:16 -0600
+
 galliumos-laptop (1.0.5) vivid-galliumos; urgency=medium
 
   * Modified touchpad calibration script for resume
