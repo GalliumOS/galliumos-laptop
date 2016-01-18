@@ -34,6 +34,11 @@ chgrp plugdev /sys/class/backlight/intel_backlight/brightness
 chmod 664 /sys/class/backlight/intel_backlight/brightness
 
 #Calibrate the touchpad
+BASELINE=`find /sys/devices/pci* -name 'baseline' | head -1`
+if [ -d $BASELINE ]
+then
+   echo 1 > $BASELINE/acquire
+fi
 CALIBRATE=`find /sys/devices/pci* -name 'calibrate' | head -1`
 if [ -n $CALIBRATE ]
 then

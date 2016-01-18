@@ -11,5 +11,5 @@ Provides: laptop
 Architecture: all
 Priority: optional
 Depends: ${misc:Depends}, ubuntu-standard, galliumos-desktop, galliumos-device
-Description: GalliumOS laptop customizations
- This package contains laptop-specific files for GalliumOS
+Description: Gallium OS laptop files
+ This package contains laptop files for GalliumOS
