@@ -34,13 +34,19 @@ chgrp plugdev /sys/class/backlight/intel_backlight/brightness
 chmod 664 /sys/class/backlight/intel_backlight/brightness
 
 #Calibrate the touchpad
-BASELINE=`find /sys/devices/pci* -name 'baseline' | head -1`
-if [ -d $BASELINE ]
-then
-   echo 1 > $BASELINE/acquire
-fi
 CALIBRATE=`find /sys/devices/pci* -name 'calibrate' | head -1`
 if [ -n $CALIBRATE ]
 then
    echo 1 > $CALIBRATE
 fi
+
+#Insert keyboard backlight module for specific modules
+MODELS=(link lulu gandof samus)
+PRODUCT=`dmidecode -s system-product-name | awk '{print tolower($0)}'`
+for i in "${MODELS[@]}"
+do
+    if [ "$i" == "$PRODUCT" ] ; then
+        insmod chromeos_keyboard_bl.ko
+        insmod chromebook_kb_backlight.ko 
+    fi
+done

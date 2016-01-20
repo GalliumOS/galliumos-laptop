@@ -1,3 +1,10 @@
+galliumos-laptop (1.0.9) vivid-galliumos; urgency=medium
+
+  * Removed init-laptop-settings change to aqcuire the baseline for elan touchpads before a calibration. It didn't do what I thought it did.
+  * Changed init-laptop-settings to insmod the keyboard backlight module for specific models
+
+ -- Hugh Greenberg <hugh@galliumos.org>  Tues, 19 Jan 2015 22:16:16 -0600
+
 galliumos-laptop (1.0.8) vivid-galliumos; urgency=medium
 
   * Removed touchpad calibration script for resume
