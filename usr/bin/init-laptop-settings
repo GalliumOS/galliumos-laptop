@@ -37,7 +37,18 @@ chmod 664 /sys/class/backlight/intel_backlight/brightness
 CALIBRATE=`find /sys/devices/pci* -name 'calibrate' | head -1`
 if [ -n $CALIBRATE ]
 then
-   echo 1 > $CALIBRATE
+    echo 1 > $CALIBRATE
+
+    #Enable async power management for the touchpad
+    TOUCHPAD_DIR=`dirname $CALIBRATE`
+    if [ -n $TOUCHPAD_DIR ]
+    then
+	FILES=`find $TOUCHPAD_DIR -name 'async'`
+        for i in $FILES
+        do
+            echo enabled > $i
+        done
+    fi
 fi
 
 #Insert keyboard backlight module for specific modules
