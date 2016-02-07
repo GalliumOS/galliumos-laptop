@@ -1,3 +1,9 @@
+galliumos-laptop (1.0.12) vivid-galliumos; urgency=medium
+
+  * Changed default keyboard layout
+
+ -- Hugh Greenberg <hugh@galliumos.org>  Sun, 7 Jan 2016 22:16:16 -0600
+
 galliumos-laptop (1.0.11) vivid-galliumos; urgency=medium
 
   * Enabled async power management for the touchpad driver.

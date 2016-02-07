@@ -6,6 +6,6 @@
     <property name="XkbOptions" type="empty">
       <property name="Group" type="string" value=""/>
     </property>
-    <property name="XkbModel" type="string" value="chromebook"/>
+    <property name="XkbModel" type="string" value="chromebook_m_ralt"/>
   </property>
 </channel>
