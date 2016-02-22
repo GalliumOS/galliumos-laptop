@@ -57,7 +57,7 @@ PRODUCT=`dmidecode -s system-product-name | awk '{print tolower($0)}'`
 for i in "${MODELS[@]}"
 do
     if [ "$i" == "$PRODUCT" ] ; then
-        insmod chromeos_keyboard_bl.ko
-        insmod chromebook_kb_backlight.ko 
+        modprobe chromeos_keyboard_bl
+        modprobe chromebook_kb_backlight
     fi
 done
