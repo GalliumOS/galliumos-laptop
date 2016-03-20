@@ -1,3 +1,9 @@
+galliumos-laptop (2.0) vivid-galliumos; urgency=medium
+
+  * Changed init-laptop-settings to not rsync the touchpad config files
+
+ -- Hugh Greenberg <hugh@galliumos.org>  Mon, 18 Mar 2016 22:16:16 -0600
+
 galliumos-laptop (1.0.13) vivid-galliumos; urgency=medium
 
   * Fixed init-laptop-settings to correctly load the keyboard backlight modules
