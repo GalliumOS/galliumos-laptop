@@ -1,3 +1,10 @@
+galliumos-laptop (2.0.1) vivid-galliumos; urgency=medium
+
+  * Changed init-laptop-settings to not enable async pm for the touchpad
+  * Fixed a quoting issue
+
+ -- Hugh Greenberg <hugh@galliumos.org>  Mon, 16 Apr 2016 22:16:16 -0600
+
 galliumos-laptop (2.0) vivid-galliumos; urgency=medium
 
   * Changed init-laptop-settings to not rsync the touchpad config files
