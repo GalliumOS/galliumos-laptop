@@ -1,5 +1,5 @@
 [Unit]
-Description=Sets Laptop Specific Settings
+Description=GalliumOS system customization for Chromebooks
 
 [Service]
 ExecStart=/usr/bin/init-laptop-settings

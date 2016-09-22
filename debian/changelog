@@ -1,3 +1,9 @@
+galliumos-laptop (2.0.3) xenon; urgency=medium
+
+  * aesthetic-only: fix syntax of systemd status messages
+
+ -- reynhout <reynhout@galliumos.org>  Thu, 22 Sep 2016 17:36:24 +0000
+
 galliumos-laptop (2.0.2) vivid-galliumos; urgency=medium
 
   * Changed touchpad calibrate find command
