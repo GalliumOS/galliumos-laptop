@@ -1,7 +1,7 @@
 Source: galliumos-laptop
 Section: admin
 Priority: optional
-Maintainer: Hugh Greenberg <hugh@galliumos.org>
+Maintainer: GalliumOS <galliumos@galliumos.org>
 Build-Depends: debhelper (>= 8.0.0),
                dh-systemd
 Standards-Version: 3.9.6
