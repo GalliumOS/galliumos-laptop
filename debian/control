@@ -10,6 +10,6 @@ Package: galliumos-laptop
 Provides: laptop
 Architecture: all
 Priority: optional
-Depends: ${misc:Depends}, ubuntu-standard, galliumos-desktop, galliumos-device
+Depends: ${misc:Depends}, ubuntu-standard, galliumos-desktop
 Description: GalliumOS laptop files
  This package contains laptop files for GalliumOS
