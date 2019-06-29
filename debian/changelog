@@ -1,4 +1,4 @@
-galliumos-laptop (2.9902) bismuth; urgency=medium
+galliumos-laptop (3.0) bismuth; urgency=medium
 
   * Prepare for GalliumOS 3.0
   * Remove dependency on galliumos-device
